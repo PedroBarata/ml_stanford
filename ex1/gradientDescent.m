@@ -27,9 +27,12 @@ for iter = 1:num_iters
 
     % ============================================================
 
-    % Save the cost J in every iteration
+    %Save the cost J in every iteration
+    %Forma vetorial, internet
     %delta = (theta' * X'-y')*X;
     %theta = theta - alpha/m*delta';
+
+    %Forma vetorial (baseado nos slides)
     theta = theta - alpha/m*sum((X*theta - y).*X)';
    
    %De forma não-vetorial
